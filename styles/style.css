@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aqua;
+  margin-top: 220px;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 50px;
+}
+body .container h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  margin-left: 3vh;
+  cursor: default;
+}
+body .container .row input {
+  width: 200px;
+  height: 30px;
+  padding: 15px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  outline: none;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+}
+body .container .row button {
+  width: 70px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: orange;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+body .container ul li {
+  font-family: "Courier New", Courier, monospace;
+  list-style: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  padding: 12px 8px 12px 40px;
+  position: relative;
+  cursor: pointer;
+}
+body .container ul li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-image: url(/icons/icons8-round.svg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 11px;
+  left: 8px;
+}
+body .container ul .cheked {
+  color: gray;
+  text-decoration: line-through;
+}
+body .container ul .cheked::before {
+  background-image: url(/icons/icons8-done.svg);
+}
+body .container ul span {
+  position: absolute;
+  right: 0;
+  top: 7px;
+  width: 30px;
+  font-size: 25px;
+  text-align: center;
+}
+body .container ul span:hover {
+  background-color: rgb(206, 206, 206);
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */
